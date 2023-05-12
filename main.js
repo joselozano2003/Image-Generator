@@ -18,8 +18,8 @@ form.addEventListener('submit', async (e) => {
   });
 
   if (response.ok){
-    // const { image } = await response.json();
-    const image = "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltc4e49d9e81d7b294/640fa1841e37851bb800a6c6/neymar_psg.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+    const { image } = await response.json();
+    // const image = "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltc4e49d9e81d7b294/640fa1841e37851bb800a6c6/neymar_psg.jpg?auto=webp&format=pjpg&width=3840&quality=60"
   
     const result = document.querySelector('#result');
     result.innerHTML = `<img src="${image}" width="512" />`;
